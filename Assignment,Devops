@@ -1,0 +1,27 @@
+Question 1:
+create file structure
+--->
+mkdir -p A/{B/{D/{I/{M/{Z}},J/{L}},E/{H/{L/{Z}}}},C/{F/{H},G/{K}}}
+
+
+Question2:
+change file permission of date command we only have to  provide access to jack user
+-->
+chown jack /usr/bin/date
+chgrp jack /usr/bin/date
+ls -l /usr/bin/date
+chmod -x /usr/bin/date
+
+
+
+Question3:
+copy one user data into another user 
+-->
+cp -r /home/A/k1 /home/B/
+cp -r /home/B/k2 /home/A/
+
+
+Question4:
+run cal command in every 10sec and store output in /tmp/a.txt
+-->
+watch -n10 cal > /tmp/a.txt
